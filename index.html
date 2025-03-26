@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<!--------------------- Header ----------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="mylogo.png" class="logo">
+                <ul id="sidemenu">
+                   <li><a href="#header"><strong>Home</strong></a></li>
+                   <li><a href="#about"><strong>About</strong></a></li>
+                   <li><a href="#projects"><strong>Projects</strong></a></li>
+                   <li><a href="#contact"><strong>Contact</strong></a></li>
+                   <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Bhuvaneswar Naidu</span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+<!-------------------- About -------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>
+                        I'm a versatile Full Stack Developer who specializes in creating efficient, scalable solutions and crafting seamless, user-friendly experiences. 
+                        With a commitment to continuous learning and a knack for tackling new challenges, 
+                        I'm always ready to bring innovative ideas to life. 
+                        Let's collaborate and build something extraordinary together!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><strong>Skills</strong></p>
+                        <p class="tab-links" onclick="opentab('education')"><strong>Education</strong></p>
+                        <p class="tab-links" onclick="opentab('certifications')"><strong>Certifications</strong></p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills" style="min-height: 300px;">
+                        <ul>
+                            <li><span><strong>Java Standard Edition</strong></span><br>Programming language for building applications</li>
+                            <li><span><strong>Advanced Java</strong></span><br>JDBC, JEE, Servlets</li>
+                            <li><span><strong>Front End technologies</strong></span><br>(HTML, CSS, JavaScript)</li>
+                            <li><span><strong>MySQL</strong></span><br>Relational database management system</li>
+                            <li><span><strong>Hibernate</strong></span><br>Framework for mapping Java objects to database tables</li>
+                            <li><span><strong>Spring</strong></span><br>Framework for building enterprise applications</li> 
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education" style="min-height: 300px;">
+                        <ul>
+                            <li><span><em>2020 - 2024</em></span><br><strong>Bachelor of Technology</strong> <strong>|</strong> CSE <strong>|</strong> GPA: 79 / 100<br> PVKK Institute of Technology, Anantapuram</li>
+                            <li><span><em>2018 - 2020</em></span><br><strong>Intermediate</strong> <strong>|</strong> MPC <strong>|</strong> GPA: 82 / 100<br> Sri chaitanya Junior College, Tirupati</li>
+                            <li><span><em>2017 - 2018</em></span><br><strong>SSC</strong> <strong>|</strong> <strong>|</strong> GPA: 79 / 100<br> Sri Nagarjuna E.M High School, Nambulip</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="certifications" style="min-height: 300px;">
+                        <ul>
+                            <li><span><strong>Full Stack Web Development</strong></span><br>Tap Academy, Bengaluru</li>
+                            <li><span><strong>Python Programming for Everybody</strong></span><br>Coursera</li>
+                            <li><span><strong>Java Programming</strong></span><br>Digibrains Academy, Anantapuram</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------Projects------------------------------ -->
+    <div id="projects">
+        <div class="container">
+            <h2 class="sub-title"><span>My</span> Projects</h2>
+            <div class="projects-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2><strong>To-Do List</strong></h2>
+                    <p>
+                        A simple yet effective to-do list application allowing users to create, update, and delete tasks for efficient task management.
+                         Ideal for keeping track of daily responsibilities.
+                    </p>
+                    <a href="https://github.com/bhuvaneshparikidona/todolist" target="_blank"><button>link</button></a>
+                </div>
+
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2><strong>Portfolio Website</strong></h2>
+                    <p>
+                        A sleek and modern portfolio website showcasing personal projects, skills, and projects. 
+                        Features include responsive design, easy navigation, and an interactive project gallery for potential employers and clients to explore.
+                    </p>
+                    <a href="https://github.com/bhuvaneshparikidona" target="_blank"><button>link</button></a>
+                </div>
+
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2><strong>Food Application</strong></h2>
+                    <p>
+                        A comprehensive food app that allows users to browse, search, and order from a variety of restaurants.
+                         Features include real-time menu updates, order tracking, and personalized recommendations for a seamless dining experience.
+                    </p>
+                    <a href="https://github.com/bhuvaneshparikidona" target="_blank"><button>link</button></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------- Contact form -------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p> <i class="fas fa-paper-plane"></i>bhuvaneshparikidona123@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i>+91-6300706692</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/parikidonabhuvaneswarnaidu" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/bhuvaneshparikidona" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/bhuvaneshparikidona" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/BhuvanNaiduOffl" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="Resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name ="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2025 Bhuvaneswar Naidu. All rights reserved.</p>
+
+    </div>
+
+
+
+    <script>
+        function opentab(tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbynyNv6NIUG7cim1LbRhgg4oudYvaCPWzMssk5VFsi6xqHEXSx7W0-EloNi-Nw6OPyO0w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },9000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
