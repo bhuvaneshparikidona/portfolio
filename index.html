@@ -206,5 +206,26 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+
+     <script>
+        const textToType = "Full Stack Developer";
+        const typingSpeed = 80; // Adjust for typing speed in milliseconds
+        let charIndex = 0;
+        const typingTextElement = document.getElementById("typing-text");
+
+        function typeText() {
+            if (charIndex < textToType.length) {
+                typingTextElement.textContent += textToType.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeText, typingSpeed);
+            }
+        }
+
+        // Start the typing animation when the page loads
+        window.onload = function() {
+            typeText();
+        };
+    </script>
+    
 </body>
 </html>
