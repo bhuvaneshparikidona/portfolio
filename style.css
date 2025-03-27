@@ -259,6 +259,12 @@ nav ul li a:hover::after{
     font-size: 25px;
 }
 
+.contact-left pre i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
 .social-icons{
     margin-top: 30px;
 }
@@ -267,13 +273,13 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 50px;
-    color: #ababab;
+    color: #e60045;
     display: inline-block;
     transition: transform 0.5s;
 }
 
 .social-icons a:hover{
-    color: #ff004f ;
+    color: #fff ;
     transform: translateY(-5px);
 }
 
@@ -331,19 +337,17 @@ form input, form textarea{
 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/phone-background.png);
+        background-image: url(phonebg.png);
     }
-    .logo{
-    width: 180px;
-}
     .header-text{
         margin-top: 100% ;
-        font-size: 20px;
+        font-size: 16px;
+    }
+    .logo{
+        width: 160px;
+        height: 50px;
     }
     .header-text h1{
-        font-size: 30px;
-    }
-      .header-text p{
         font-size: 30px;
     }
     .fas.fa-bars, .fas.fa-times {
@@ -376,9 +380,16 @@ form input, form textarea{
     .sub-title{
         font-size: 30px;
     }
-     .tab-contents{
+    .tab-contents{
         font-size: 15px;
+        
     } 
+    .tab-titles p{
+        font-size: 18px;
+    }
+    .tab-contents li{
+        font-size: 15px;
+    }
 
     .about-col-1,.about-col-2{
         flex-basis: 100%;
@@ -388,9 +399,14 @@ form input, form textarea{
         margin-bottom: 30px;
     }
     .about-col-2{
-        font-size: 14px;
+        font-size: 18px;
 
     }
+    .projects-list div i{
+        color: #ff004f;
+    }
+
+    
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
