@@ -7,6 +7,8 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
         /* Add this to your style.css or in a <style> tag in the <head> */
         #typing-text {
@@ -36,7 +38,7 @@
 
             <div class="header-text">
                 <p id="typing-text"></p>
-                <h1>Hi, I'm <span>Bhuvaneswar Naidu</span> <br>from India</h1>
+                <h1>Hi, This is<span><pre>Bhuvaneswar Naidu</pre></span> <br>from <span>India</span></h1>
             </div>
         </div>
     </div>
@@ -47,7 +49,8 @@
                     <img src="user.png">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <h1 class="sub-title">About <span>Me</span> </h1>
+                    <br>
                     <p>
                         I'm a versatile Full Stack Developer who specializes in creating efficient, scalable solutions and
                         crafting seamless, user-friendly experiences.
@@ -55,6 +58,7 @@
                         I'm always ready to bring innovative ideas to life.
                         Let's collaborate and build something extraordinary together!
                     </p>
+                    <br>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')"><strong>Skills</strong></p>
@@ -67,8 +71,8 @@
                             <li><span><strong>Java Standard Edition</strong></span><br>Programming language for building
                                 applications</li>
                             <li><span><strong>Advanced Java</strong></span><br>JDBC, JEE, Servlets</li>
-                            <li><span><strong>Front End technologies</strong></span><br>(HTML, CSS, JavaScript)</li>
-                            <li><span><strong>MySQL</strong></span><br>Relational database management system</li>
+                            <li><span><strong>Front End Technologies</strong></span><br>HTML, CSS, JavaScript</li>
+                            <li><span><strong>MySQL</strong></span><br>Relational Database Management System</li>
                             <li><span><strong>Hibernate</strong></span><br>Framework for mapping Java objects to database
                                 tables</li>
                             <li><span><strong>Spring</strong></span><br>Framework for building enterprise applications</li>
@@ -78,11 +82,14 @@
                     <div class="tab-contents" id="education" style="min-height: 300px;">
                         <ul>
                             <li><span><em>2020 - 2024</em></span><br><strong>Bachelor of Technology</strong> <strong>|</strong> CSE
-                                <strong>|</strong> GPA: 79 / 100<br> PVKK Institute of Technology, Anantapuram</li>
-                            <li><span><em>2018 - 2020</em></span><br><strong>Intermediate</strong> <strong>|</strong> MPC <strong>|</strong>
-                                GPA: 82 / 100<br> Sri chaitanya Junior College, Tirupati</li>
-                            <li><span><em>2017 - 2018</em></span><br><strong>SSC</strong> <strong>|</strong> <strong>|</strong> GPA: 79 / 100<br>
-                                Sri Nagarjuna E.M High School, Nambulip</li>
+                            <br> PVKK Institute of Technology, Anantapuram <br>GPA: 79 / 100</li>
+
+                            <li><span><em>2018 - 2020</em></span><br><strong>Board of Intermediate, AP</strong> <strong>|</strong> MPC
+                               <br>  Sri chaitanya Junior College, Tirupati<br>GPA: 82 / 100</li>
+
+                            <li><span><em>2017 - 2018</em></span><br><strong>Secondary School Education, AP</strong> <br>
+                                Sri Nagarjuna E.M High School, Nambulipulikunta <br>  CGPA: 9.7 / 10
+                               </li>
                         </ul>
                     </div>
 
@@ -116,7 +123,7 @@
                     <i class="fas fa-code"></i>
                     <h2><strong>Portfolio Website</strong></h2>
                     <p>
-                        A sleek and modern portfolio website showcasing personal projects, skills, and projects.
+                        A modern portfolio website showcasing personal projects, skills, and projects.
                         Features include responsive design, easy navigation, and an interactive project gallery for
                         potential employers and clients to explore.
                     </p>
@@ -143,8 +150,8 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact <span>Me</span></h1>
-                    <p> <i class="fas fa-paper-plane"></i>bhuvaneshparikidona123@gmail.com</p>
+                    <h1 class="sub-title">Contact <span>Me</span></h1> <br>
+                    <pre> <i class="fas fa-google"></i>bhuvaneshparikidona123@gmail.com</pre>
                     <p> <i class="fas fa-phone-square-alt"></i>+91-6300706692</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/parikidonabhuvaneswarnaidu" target="_blank"><i
@@ -154,8 +161,14 @@
                                 class="fab fa-instagram"></i></a>
                         <!-- <a href="https://x.com/BhuvanNaiduOffl" target="_blank"><i class="fab fa-twitter-square"></i></a> -->
                         <a href="Resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+                        <br>
+                        <br>
+                        <br><br>
+                        <br>
                     </div>
                 </div>
+               <center> <h2>Lets Connect !</h2></center>
+
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
